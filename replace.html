@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+   <title>Replace-elements</title>
+   <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+   <script>
+      $(document).ready(function () {
+         $(".click-button").click(function () {
+            $(".hello").replaceWith("<h2>New Element</h2>");
+         });
+         $(".dbclick-button").dblclick(function () {
+            $(".titile-3").replaceWith("<h2>New Double click Element</h2>");
+         });
+
+         // $(".hover-button").hover(function () {
+         //    $(".titile-5").replaceWith("<h2>New hover Element</h2>");
+         // });
+
+         $(".click-button-2").click(function () {
+            $(".textid3").replaceWith("<h2>New  Element</h2>");
+         });
+
+         $(".click-button-3").click(function () {
+            $(".radio-btn-click").replaceWith("<p>New elements</p>");
+         });
+
+      });
+   </script>
+
+</head>
+
+<body>
+
+   <div class="container">
+      <h2>Replace Method</h2>
+      <div class="hello">Hello</div>
+      <div class="goodbye">Goodbye</div>
+      <button class="click-button">Replace</button>
+   </div>
+
+   <div class="container">
+      <h2>Replace</h2>
+      <div class="titile-2">Hello</div>
+      <div class="titile-3">Goodbye</div>
+      <button class="dbclick-button">Replace Text db</button>
+   </div>
+
+   <!-- <div class="container">
+      <h2>Replace</h2>
+      <div class="titile-4">Hello</div>
+      <div class="titile-5">Goodbye</div>
+      <button class="hover-button">Text hover</button>
+   </div> -->
+
+   <div class="container">
+      <h2>Replace</h2>
+      <div class="titile-4">Hello</div>
+      <input class="textid3" test="file" type="time" name="">
+   </div>
+   <button class="click-button-2">click</button>
+
+   <div class="container">
+      <h2>Replace</h2>
+      <div class="titile-4">Hello</div>
+      <input type="radio" class="radio-btn-click" name="fav_language" value="JavaScript">
+   </div>
+   <button class="click-button-3">click</button>
+
+
+</body>
+
+</html>

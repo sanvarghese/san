@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+   <title>jQuery-remove-elements</title>
+   <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+   <script>
+      $(document).ready(function () {
+         $(".click-button-1").click(function () {
+            $(".title-2").remove();
+         });
+         $(".submit-button-2").click(function () {
+            $(".textid2").remove();
+         });
+         $(".check-boxid4").click(function () {
+            $(".textid3").remove();
+         });
+      });
+   </script>
+
+</head>
+
+<body>
+   <div class="container">
+      <h2>Remove Method</h2>
+      <div class="title-1">Hello</div>
+      <div class="title-2">Goodbye</div>
+   </div>
+   <button class="click-button-1">click us</button>
+
+   <div class="container">
+      <h2>Remove Method</h2>
+      <div class="title-3">Hello</div>
+      <input class="timeid1" test="this is test" type="time" name="txtname" data-address="">
+      <input class="textid2" test="file" type="text" name="txtname" data-address="">
+      <button class="submit-button-2">submit</button>
+   </div>
+
+   <div class="container">
+      <h2>Remove Method</h2>
+      <div class="title-3">Hello</div>
+      <input class="textid3" test="file" type="number" name="txtname" >
+      <input class="check-boxid4" test="file" type="checkbox" name="txtname">
+   </div>
+
+
+</body>
+
+</html>
