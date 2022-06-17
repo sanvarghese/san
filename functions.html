@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+   <title>css-class-2</title>
+   <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+   <script>
+      $(document).ready(function () {
+
+         $("#click-button1").click(function () {
+            addClass
+         });
+
+         // $("#click-button-2").click(function () {
+         //    Replacewith
+         // });
+
+
+      });
+
+      function addClass() {
+         $(".hello").addClass(".big");
+      }
+
+      // function Replacewith() {
+      //    $(".hello-2").replaceWith("<h2>new element</h2>");
+      // }
+
+
+   </script>
+
+   <style>
+      .big {
+         font-weight: bold;
+         font-size: 30px;
+         color: red;
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <div class="container">
+      <h2>jQuery addClass</h2>
+      <div class="hello big">Hello</div>
+      <div class="goodbye">Goodbye</div>
+   </div>
+   <br>
+
+   <button id="click-button1">Add Class</button>
+
+   <!-- <div class="container">
+      <h2>jQuery addClass</h2>
+      <div class="hello-2">Hello</div>
+      <div class="goodbye-2">Goodbye</div>
+   </div>
+   <br>
+
+   <button id="click-button-2">Add Class</button> -->
+
+</body>
+
+</html>
