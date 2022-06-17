@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+   <title>Replace-elements</title>
+   <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+   <script>
+      $(document).ready(function() {
+      $(".click-button1").click(function(){
+         $( ".hello" ).addClass("big" );
+         $( ".goodbye" ).addClass("small" );
+      });
+
+      $(".click-button-2").click(function(){
+         $( ".hello-2" ).removeClass("big-2" );
+         $( ".goodbye-2" ).removeClass("small-2" );
+      });
+
+      $(".click-button-3").click(function(){
+         $( ".hello-3" ).toggleClass("big-3" );
+      });
+
+
+   });
+     
+   </script>
+
+<style>
+   .big{ font-weight: bold; font-size:20px; }
+   .small{ font-weight: normal; font-size:20px;color: green; }
+
+   .big-2{ font-weight: bold; font-size:20px; }
+   .small-2{ font-weight: normal; font-size:10px; }
+
+   .big-3{ font-weight: bold; font-size:20px; }
+
+</style>
+ 
+</head>
+
+<body>
+
+   <div class="container">
+      <h2>jQuery addClass</h2>
+      <div class="hello">Hello</div>
+      <div class="goodbye">Goodbye</div>
+   </div>
+   <br>
+   
+   <button class="click-button1">Add Class</button>
+
+
+   <div class="container">
+      <h2>jQuery removeClass</h2>
+      <div class="hello-2 big-2">Hello</div>
+      <div class="goodbye-2 small-2">Goodbye</div>
+   </div>
+   
+   <button class="click-button-2">Add Class</button>
+
+   <div class="container">
+      <h2>jQuery toggleClass Method</h2>
+      <div class="hello-3 big-3">Hello</div>
+      <div class="goodbye-3">Goodbye</div>
+   </div>
+   <br>
+   
+   <button class="click-buttton-3">Toggle Class</button>
+
+</body>
+
+</html>
