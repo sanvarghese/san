@@ -6,16 +6,34 @@
    <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
    <script>
       $(document).ready(function () {
+
          $(".click-button-1").click(function () {
-            $(".title-2").remove();
+            Remove1();
          });
+
          $(".submit-button-2").click(function () {
-            $(".textid2").remove();
+            Removeinput2();
          });
+
          $(".check-boxid4").click(function () {
-            $(".textid3").remove();
+            Removecheckbox3();
          });
+         
+         
+         // $(".check-boxid4").click(function () {
+         //    $(".textid3").remove();
+         // });
       });
+      function Remove1() {
+         $(".title-2").remove();
+      }
+      function Removeinput2() {
+         $(".textid2").remove();
+      }
+      function Removecheckbox3() {
+         $(".textid3").remove();
+      }
+
    </script>
 
 </head>

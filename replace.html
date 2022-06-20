@@ -2,30 +2,49 @@
 <html>
 
 <head>
-   <title>Replace-elements</title>
+   <title>Replace-elements11</title>
    <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
    <script>
       $(document).ready(function () {
-         $(".click-button").click(function () {
-            $(".hello").replaceWith("<h2>New Element</h2>");
+
+        
+         $("#click-button2").click(function () {
+            ReplaceWith1();
          });
+     
+
          $(".dbclick-button").dblclick(function () {
-            $(".titile-3").replaceWith("<h2>New Double click Element</h2>");
+          ReplaceWith2()
          });
 
-         // $(".hover-button").hover(function () {
-         //    $(".titile-5").replaceWith("<h2>New hover Element</h2>");
-         // });
+          $(".radio-btn-click").click(function () {
+          ReplaceWith3()
+          });
 
-         $(".click-button-2").click(function () {
-            $(".textid3").replaceWith("<h2>New  Element</h2>");
-         });
-
-         $(".click-button-3").click(function () {
-            $(".radio-btn-click").replaceWith("<p>New elements</p>");
-         });
+          $(".click-button-4").click(function () {
+          ReplaceWith4input()
+          });
 
       });
+
+
+      function ReplaceWith1() {
+         $("#hello2").replaceWith("<h2>New Element</h2>");
+      }
+
+      function ReplaceWith2() {
+         $(".titile-3").replaceWith("<h2>New Double click Element</h2>");
+         }
+     
+      function ReplaceWith3() {
+        $(".radio-btn-click").replaceWith("<p>New elements</p>");
+        }
+
+        function ReplaceWith4input() {
+        $(".textid3").replaceWith("<h3>New elements</h3>");
+        }
+
+
    </script>
 
 </head>
@@ -34,38 +53,34 @@
 
    <div class="container">
       <h2>Replace Method</h2>
-      <div class="hello">Hello</div>
-      <div class="goodbye">Goodbye</div>
-      <button class="click-button">Replace</button>
+      <div id="hello2">Hello</div>
+      <div class="goodbye2">Goodbye</div>
+      <button id="click-button2">Replace</button>
    </div>
 
    <div class="container">
       <h2>Replace</h2>
-      <div class="titile-2">Hello</div>
-      <div class="titile-3">Goodbye</div>
+      <div class="titile-2">Hello-2</div>
+      <div class="titile-3">Goodbye-2</div>
       <button class="dbclick-button">Replace Text db</button>
    </div>
-
-   <!-- <div class="container">
-      <h2>Replace</h2>
-      <div class="titile-4">Hello</div>
-      <div class="titile-5">Goodbye</div>
-      <button class="hover-button">Text hover</button>
-   </div> -->
-
-   <div class="container">
-      <h2>Replace</h2>
-      <div class="titile-4">Hello</div>
-      <input class="textid3" test="file" type="time" name="">
-   </div>
-   <button class="click-button-2">click</button>
 
    <div class="container">
       <h2>Replace</h2>
       <div class="titile-4">Hello</div>
       <input type="radio" class="radio-btn-click" name="fav_language" value="JavaScript">
    </div>
-   <button class="click-button-3">click</button>
+   <!-- <button class="click-button-3">click</button> -->
+
+
+   <div class="container">
+      <h2>Replace</h2>
+      <div class="titile-4">Hello</div>
+      <input class="textid3" test="file" type="time" name="">
+   </div>
+   <button class="click-button-4">click</button>
+
+   
 
 
 </body>
