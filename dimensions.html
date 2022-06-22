@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+
+<head>
+   <title>Dimensions</title>
+   <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+   <script>
+      $(document).ready(function () {
+
+         $("#b1").click(function(){
+            getwidth()
+      });
+      
+       $("#b2").click(function () {
+         setwidth()
+
+      });
+
+      $("#b3").click(function(){
+            getheight()
+      });
+      
+       $("#b4").click(function () {
+         setheight()
+
+      });
+
+
+      $("#b5").click(function(){
+            getinnerwidth()
+      });
+      
+       $("#b6").click(function () {
+         setinnerwidth()
+
+      });
+
+      $("#b7").click(function(){
+            getouterwidth()
+      });
+      
+       $("#b8").click(function () {
+         setouterwidth()
+
+      });
+
+      $("#b9").click(function(){
+            getouterheight()
+      });
+      
+       $("#b10").click(function () {
+         setouterheight()
+
+      });
+     
+      
+      });
+
+    
+
+       function getwidth() {
+         alert("Box width = " + $(".width-div").width());
+
+       }
+
+       function setwidth() {
+         $(".width-div").width("600px");
+       }
+
+
+
+       function getheight() {
+         alert("Box Height = " + $(".diamension-height").height());
+       }
+
+       function setheight() {
+         $(".diamension-height").height("800px");
+       }
+
+
+       function getinnerwidth() {
+         alert("Box innerWidth = " + $(".width-inner-div").innerWidth());
+       }
+
+       function setinnerwidth() {
+         $(".width-inner-div").innerWidth("800px");
+       }
+
+
+       function getouterwidth() {
+         alert("Box outerWidth = " + $(".width-outer-div").outerWidth());
+       }
+
+       function setouterwidth() {
+         $(".width-outer-div").outerWidth("400px");
+       }
+
+
+       function getouterheight() {
+         alert("Box outerHeight = " + $(".height-outer-div").outerHeight());
+       }
+
+       function setouterheight() {
+         $(".height-outer-div").outerHeight("100px");
+       }
+    
+
+   </script>
+   <style>
+      button{margin:10px;cursor:pointer}
+      .width-div{ margin:10px;padding:12px; width:140px;}
+
+      .diamension-height{ margin:10px;padding:12px; width:155px;}
+
+      .width-inner-div{ margin:10px;padding:12px; width:140px;}
+      .width-outer-div{ margin:10px;padding:12px; width:140px;}
+      .height-outer-div{ margin:10px;padding:12px; width:140px;}
+
+
+
+   </style>
+
+</head>
+
+<body>
+   
+
+   <p>Click the below buttons to see the result:</p>
+
+   <div class="width-div" style="background-color:#93ff93;">Box</div>
+
+   <button id="b1">Get width</button>
+   <button id="b2">Set width</button>
+
+
+   <div class="diamension-height" style="background-color:#ea9423;">Box</div>
+   <button id="b3">Get height</button>
+   <button id="b4">Set height</button>
+
+
+   <p>Click the below buttons to see the result:</p>
+
+   <div class="width-inner-div" style="background-color:#56cdb5;">Box</div>
+   <button id="b5">Get width</button>
+   <button id="b6">Set width</button>
+
+   <p>Click the below buttons to see the result:</p>
+
+   <div class="width-outer-div" style="background-color:#56cdb5;">Box</div>
+   <button id="b7">Get width</button>
+   <button id="b8">Set width</button>
+
+   <div class="height-outer-div" style="background-color:#1c3a8f;">Box</div>
+
+   <button id="b9">Get height</button>
+   <button id="b10">Set height</button>
+   
+</body>
+
+</html>
